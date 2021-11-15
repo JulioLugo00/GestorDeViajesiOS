@@ -30,6 +30,7 @@ class CrearEventoVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
 
     @IBOutlet weak var fechaInicioTextField: UITextField!
     
+    var evento = Evento(nombre: "Evento Generico", tipo: "Salida", fechaInicio: "Nov 15, 2021", fechaFin: "Nov 15, 2021", presupuesto: 2000, ubicacion: "Coacalco")
     
     @IBOutlet weak var fechaFinalTextField: UITextField!
     
@@ -48,7 +49,39 @@ class CrearEventoVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
     
     
     @IBAction func crearEventoBoton(_ sender: Any) {
-    
+        if(nombreTextField.text != "" && tipoTextField.text != "" && fechaFinalTextField.text != "" && fechaFinalTextField.text != "" && presupuestoTextField.text != "" && ubicacionTextField.text != ""){
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateStyle = .medium
+            let fechaInicio = dateFormatter.date(from: fechaInicioTextField.text!)
+            let fechaFin = dateFormatter.date(from: fechaFinalTextField.text!)
+            if(fechaFin! < fechaInicio!){
+                //Cuadro de dialogo
+                let alerta = UIAlertController(title: "Aviso", message: "La fecha de inicio es mayor a la fecha final", preferredStyle: .alert)
+                //Botón
+                let aceptar = UIAlertAction(title: "Aceptar", style: .cancel, handler: nil)
+                alerta.addAction(aceptar)
+                present(alerta, animated: true)
+            }
+            else{
+                //Cuadro de dialogo
+                //let alerta = UIAlertController(title: "Completado", message: "Evento creado", preferredStyle: .alert)
+                //Botón
+                //let aceptar = UIAlertAction(title: "Aceptar", style: .cancel, handler: nil)
+                //alerta.addAction(aceptar)
+                //present(alerta, animated: true)
+                evento = Evento(nombre: nombreTextField.text!, tipo: tipoTextField.text!, fechaInicio: fechaInicioTextField.text!, fechaFin: fechaFinalTextField.text!, presupuesto: Int(presupuestoTextField.text!)!, ubicacion: ubicacionTextField.text!)
+               
+            }
+            
+        }
+        else{
+            //Cuadro de dialogo
+            let alerta = UIAlertController(title: "Aviso", message: "Introducir todos los datos", preferredStyle: .alert)
+            //Botón
+            let aceptar = UIAlertAction(title: "Aceptar", style: .cancel, handler: nil)
+            alerta.addAction(aceptar)
+            present(alerta, animated: true)
+        }
         
         
     }
@@ -57,7 +90,6 @@ class CrearEventoVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
         if #available(iOS 13.4, *){
             datePickerInicio.preferredDatePickerStyle = .wheels
         }
-        fechaInicioTextField.textAlignment = .center
         let toolbar = UIToolbar()
         toolbar.sizeToFit()
         
@@ -74,12 +106,21 @@ class CrearEventoVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
         
     }
     
+
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if evento != nil {
+            let vc = segue.destination as! ViewController
+            vc.evento = evento
+        }
+    
+    }
+    
     func createDatePickerFin(){
         
         if #available(iOS 13.4, *){
             datePickerFinal.preferredDatePickerStyle = .wheels
         }
-        fechaFinalTextField.textAlignment = .center
         let toolbar = UIToolbar()
         toolbar.sizeToFit()
         
@@ -120,7 +161,6 @@ class CrearEventoVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
         pickerView.dataSource = self
         
         tipoTextField.inputView = pickerView
-        tipoTextField.textAlignment = .center
         tipoTextField.placeholder = "Escoger tipo de evento"
         
         
