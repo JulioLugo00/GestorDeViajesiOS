@@ -13,6 +13,8 @@
 		4315F5CE2741B64F00CCE47E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4315F5CC2741B64F00CCE47E /* Main.storyboard */; };
 		4315F5D02741B65000CCE47E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4315F5CF2741B65000CCE47E /* Assets.xcassets */; };
 		4315F5D32741B65000CCE47E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4315F5D12741B65000CCE47E /* LaunchScreen.storyboard */; };
+		4352E8102741F95500FB9855 /* Evento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4352E80F2741F95500FB9855 /* Evento.swift */; };
+		4352E8142742044D00FB9855 /* CrearEventoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4352E8132742044D00FB9855 /* CrearEventoVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		4315F5CF2741B65000CCE47E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4315F5D22741B65000CCE47E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4315F5D42741B65000CCE47E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4352E80F2741F95500FB9855 /* Evento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Evento.swift; sourceTree = "<group>"; };
+		4352E8132742044D00FB9855 /* CrearEventoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrearEventoVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				4315F5CF2741B65000CCE47E /* Assets.xcassets */,
 				4315F5D12741B65000CCE47E /* LaunchScreen.storyboard */,
 				4315F5D42741B65000CCE47E /* Info.plist */,
+				4352E80F2741F95500FB9855 /* Evento.swift */,
+				4352E8132742044D00FB9855 /* CrearEventoVC.swift */,
 			);
 			path = GestorDeViajesiOS;
 			sourceTree = "<group>";
@@ -138,8 +144,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4315F5CB2741B64F00CCE47E /* ViewController.swift in Sources */,
+				4352E8142742044D00FB9855 /* CrearEventoVC.swift in Sources */,
 				4315F5C72741B64F00CCE47E /* AppDelegate.swift in Sources */,
 				4315F5C92741B64F00CCE47E /* SceneDelegate.swift in Sources */,
+				4352E8102741F95500FB9855 /* Evento.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
