@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04FBC73B2748584E00672F13 /* Viaje.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 04FBC73A2748584D00672F13 /* Viaje.jpeg */; };
+		04FBC7402748589800672F13 /* Salida.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 04FBC73E2748589800672F13 /* Salida.jpeg */; };
+		04FBC7412748589800672F13 /* Cita.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 04FBC73F2748589800672F13 /* Cita.jpeg */; };
 		4315F5C72741B64F00CCE47E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4315F5C62741B64F00CCE47E /* AppDelegate.swift */; };
 		4315F5C92741B64F00CCE47E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4315F5C82741B64F00CCE47E /* SceneDelegate.swift */; };
 		4315F5CB2741B64F00CCE47E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4315F5CA2741B64F00CCE47E /* ViewController.swift */; };
@@ -19,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04FBC73A2748584D00672F13 /* Viaje.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Viaje.jpeg; sourceTree = "<group>"; };
+		04FBC73E2748589800672F13 /* Salida.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Salida.jpeg; sourceTree = "<group>"; };
+		04FBC73F2748589800672F13 /* Cita.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Cita.jpeg; sourceTree = "<group>"; };
 		4315F5C32741B64F00CCE47E /* GestorDeViajesiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GestorDeViajesiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4315F5C62741B64F00CCE47E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4315F5C82741B64F00CCE47E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +68,9 @@
 		4315F5C52741B64F00CCE47E /* GestorDeViajesiOS */ = {
 			isa = PBXGroup;
 			children = (
+				04FBC73F2748589800672F13 /* Cita.jpeg */,
+				04FBC73E2748589800672F13 /* Salida.jpeg */,
+				04FBC73A2748584D00672F13 /* Viaje.jpeg */,
 				4315F5C62741B64F00CCE47E /* AppDelegate.swift */,
 				4315F5C82741B64F00CCE47E /* SceneDelegate.swift */,
 				4315F5CA2741B64F00CCE47E /* ViewController.swift */,
@@ -134,7 +143,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4315F5D32741B65000CCE47E /* LaunchScreen.storyboard in Resources */,
+				04FBC73B2748584E00672F13 /* Viaje.jpeg in Resources */,
 				4315F5D02741B65000CCE47E /* Assets.xcassets in Resources */,
+				04FBC7402748589800672F13 /* Salida.jpeg in Resources */,
+				04FBC7412748589800672F13 /* Cita.jpeg in Resources */,
 				4315F5CE2741B64F00CCE47E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
