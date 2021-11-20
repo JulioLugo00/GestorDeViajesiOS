@@ -262,16 +262,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bienvenido, ¿Ya sabes a dónde iras?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZ5-BK-l8h">
-                                <rect key="frame" x="70" y="419" width="275" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQu-wl-2Iv">
-                                <rect key="frame" x="174" y="448" width="67" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQu-wl-2Iv">
+                                <rect key="frame" x="76" y="455.5" width="237" height="30"/>
                                 <state key="normal" title="Ir al mapa"/>
                                 <connections>
                                     <segue destination="buN-I3-BBv" kind="show" id="txA-Uf-kQy"/>
@@ -283,19 +275,31 @@
                                     <segue destination="pnD-CV-MVR" kind="presentation" id="Jef-Es-vR9"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienvenido, ¿Ya sabes a dónde iras?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZ5-BK-l8h">
+                                <rect key="frame" x="60" y="416" width="294" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Xew-hR-AcQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="QQu-wl-2Iv" firstAttribute="leading" secondItem="Xew-hR-AcQ" secondAttribute="leading" constant="76" id="1LQ-c9-GWE"/>
+                            <constraint firstItem="Xew-hR-AcQ" firstAttribute="trailing" secondItem="gZ5-BK-l8h" secondAttribute="trailing" constant="60" id="4o6-bV-NZh"/>
+                            <constraint firstItem="Xew-hR-AcQ" firstAttribute="trailing" secondItem="QQu-wl-2Iv" secondAttribute="trailing" constant="101" id="CSN-eU-3pB"/>
                             <constraint firstItem="Xew-hR-AcQ" firstAttribute="trailing" secondItem="yhJ-T8-cua" secondAttribute="trailing" constant="10" id="GQO-mh-Jcu"/>
+                            <constraint firstItem="gZ5-BK-l8h" firstAttribute="leading" secondItem="Xew-hR-AcQ" secondAttribute="leading" constant="60" id="NSU-Sy-Xlf"/>
+                            <constraint firstItem="QQu-wl-2Iv" firstAttribute="top" secondItem="gZ5-BK-l8h" secondAttribute="bottom" constant="20" id="TZB-Xd-PNj"/>
                             <constraint firstItem="Xew-hR-AcQ" firstAttribute="bottom" secondItem="yhJ-T8-cua" secondAttribute="bottom" constant="10" id="app-3a-u4r"/>
+                            <constraint firstItem="gZ5-BK-l8h" firstAttribute="top" secondItem="Xew-hR-AcQ" secondAttribute="top" constant="328" id="fqc-Ct-V25"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Mapa" id="PMn-aQ-XmT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rVE-ZC-Fv8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="332" y="1546"/>
+            <point key="canvasLocation" x="331.8840579710145" y="1545.5357142857142"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="dYk-1p-OJx">
@@ -481,7 +485,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="MYk-Nc-ZBU"/>
+        <segue reference="Jef-Es-vR9"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Cita.jpeg" width="100" height="133"/>
