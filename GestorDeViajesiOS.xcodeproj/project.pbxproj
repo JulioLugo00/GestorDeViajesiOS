@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		041F1D8C2749602E004DA1CA /* google-logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 041F1D8B2749602E004DA1CA /* google-logo.jpg */; };
 		041F1D8F274960DE004DA1CA /* InfoEventoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041F1D8E274960DE004DA1CA /* InfoEventoVC.swift */; };
+		041F1D92274966D7004DA1CA /* sergio.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 041F1D91274966D7004DA1CA /* sergio.jpg */; };
 		04FBC73B2748584E00672F13 /* Viaje.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 04FBC73A2748584D00672F13 /* Viaje.jpeg */; };
 		04FBC7402748589800672F13 /* Salida.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 04FBC73E2748589800672F13 /* Salida.jpeg */; };
 		04FBC7412748589800672F13 /* Cita.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 04FBC73F2748589800672F13 /* Cita.jpeg */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		041F1D8B2749602E004DA1CA /* google-logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "google-logo.jpg"; sourceTree = "<group>"; };
 		041F1D8E274960DE004DA1CA /* InfoEventoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoEventoVC.swift; sourceTree = "<group>"; };
+		041F1D91274966D7004DA1CA /* sergio.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sergio.jpg; sourceTree = "<group>"; };
 		04FBC73A2748584D00672F13 /* Viaje.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Viaje.jpeg; sourceTree = "<group>"; };
 		04FBC73E2748589800672F13 /* Salida.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Salida.jpeg; sourceTree = "<group>"; };
 		04FBC73F2748589800672F13 /* Cita.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Cita.jpeg; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 		4315F5C52741B64F00CCE47E /* GestorDeViajesiOS */ = {
 			isa = PBXGroup;
 			children = (
+				041F1D91274966D7004DA1CA /* sergio.jpg */,
 				041F1D8B2749602E004DA1CA /* google-logo.jpg */,
 				04FBC73F2748589800672F13 /* Cita.jpeg */,
 				04FBC73E2748589800672F13 /* Salida.jpeg */,
@@ -150,6 +153,7 @@
 			files = (
 				4315F5D32741B65000CCE47E /* LaunchScreen.storyboard in Resources */,
 				04FBC73B2748584E00672F13 /* Viaje.jpeg in Resources */,
+				041F1D92274966D7004DA1CA /* sergio.jpg in Resources */,
 				4315F5D02741B65000CCE47E /* Assets.xcassets in Resources */,
 				041F1D8C2749602E004DA1CA /* google-logo.jpg in Resources */,
 				04FBC7402748589800672F13 /* Salida.jpeg in Resources */,
