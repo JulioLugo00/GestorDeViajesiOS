@@ -12,6 +12,8 @@ class ViewController: UIViewController {
     
     var arrEventos = ["Camping","Cita","Antro"]
     
+    @IBOutlet weak var tablaEventos: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //(evento.nombre)
@@ -22,9 +24,24 @@ class ViewController: UIViewController {
         print(evento.nombre)
         
     }
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //segue: el destino
+       //posicion del renglon
+        let indexPath = tablaEventos.indexPathForSelectedRow
+        let indice = indexPath?.row
+        
+        if indice != nil {
+            let nombre = arrEventos[indice!]
+            //se hace un cast de clase padre a hijo
+            let vc = segue.destination as! InfoEventoVC
+            vc.nombreEvento=nombre
+        }
+        
+    }
 
 }
+
+
 
 
 extension ViewController : UITableViewDataSource{

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041F1D8C2749602E004DA1CA /* google-logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 041F1D8B2749602E004DA1CA /* google-logo.jpg */; };
+		041F1D8F274960DE004DA1CA /* InfoEventoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041F1D8E274960DE004DA1CA /* InfoEventoVC.swift */; };
 		04FBC73B2748584E00672F13 /* Viaje.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 04FBC73A2748584D00672F13 /* Viaje.jpeg */; };
 		04FBC7402748589800672F13 /* Salida.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 04FBC73E2748589800672F13 /* Salida.jpeg */; };
 		04FBC7412748589800672F13 /* Cita.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 04FBC73F2748589800672F13 /* Cita.jpeg */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		041F1D8B2749602E004DA1CA /* google-logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "google-logo.jpg"; sourceTree = "<group>"; };
+		041F1D8E274960DE004DA1CA /* InfoEventoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoEventoVC.swift; sourceTree = "<group>"; };
 		04FBC73A2748584D00672F13 /* Viaje.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Viaje.jpeg; sourceTree = "<group>"; };
 		04FBC73E2748589800672F13 /* Salida.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Salida.jpeg; sourceTree = "<group>"; };
 		04FBC73F2748589800672F13 /* Cita.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Cita.jpeg; sourceTree = "<group>"; };
@@ -68,6 +72,7 @@
 		4315F5C52741B64F00CCE47E /* GestorDeViajesiOS */ = {
 			isa = PBXGroup;
 			children = (
+				041F1D8B2749602E004DA1CA /* google-logo.jpg */,
 				04FBC73F2748589800672F13 /* Cita.jpeg */,
 				04FBC73E2748589800672F13 /* Salida.jpeg */,
 				04FBC73A2748584D00672F13 /* Viaje.jpeg */,
@@ -81,6 +86,7 @@
 				4352E80F2741F95500FB9855 /* Evento.swift */,
 				4352E8132742044D00FB9855 /* CrearEventoVC.swift */,
 				7BEF7430274747400036E3C2 /* MapViewController.swift */,
+				041F1D8E274960DE004DA1CA /* InfoEventoVC.swift */,
 			);
 			path = GestorDeViajesiOS;
 			sourceTree = "<group>";
@@ -145,6 +151,7 @@
 				4315F5D32741B65000CCE47E /* LaunchScreen.storyboard in Resources */,
 				04FBC73B2748584E00672F13 /* Viaje.jpeg in Resources */,
 				4315F5D02741B65000CCE47E /* Assets.xcassets in Resources */,
+				041F1D8C2749602E004DA1CA /* google-logo.jpg in Resources */,
 				04FBC7402748589800672F13 /* Salida.jpeg in Resources */,
 				04FBC7412748589800672F13 /* Cita.jpeg in Resources */,
 				4315F5CE2741B64F00CCE47E /* Main.storyboard in Resources */,
@@ -162,6 +169,7 @@
 				7BEF7431274747400036E3C2 /* MapViewController.swift in Sources */,
 				4352E8142742044D00FB9855 /* CrearEventoVC.swift in Sources */,
 				4315F5C72741B64F00CCE47E /* AppDelegate.swift in Sources */,
+				041F1D8F274960DE004DA1CA /* InfoEventoVC.swift in Sources */,
 				4315F5C92741B64F00CCE47E /* SceneDelegate.swift in Sources */,
 				4352E8102741F95500FB9855 /* Evento.swift in Sources */,
 			);
