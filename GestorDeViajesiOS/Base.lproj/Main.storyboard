@@ -282,7 +282,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQu-wl-2Iv">
-                                <rect key="frame" x="76" y="455.5" width="237" height="30"/>
+                                <rect key="frame" x="173.5" y="469.5" width="67" height="30"/>
                                 <state key="normal" title="Ir al mapa"/>
                                 <connections>
                                     <segue destination="buN-I3-BBv" kind="show" id="txA-Uf-kQy"/>
@@ -294,9 +294,9 @@
                                     <segue destination="pnD-CV-MVR" kind="presentation" id="Jef-Es-vR9"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienvenido, ¿Ya sabes a dónde iras?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZ5-BK-l8h">
-                                <rect key="frame" x="60" y="416" width="294" height="19.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienvenido, ¿Ya sabes a dónde iras?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZ5-BK-l8h">
+                                <rect key="frame" x="20" y="420" width="374" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -304,14 +304,13 @@
                         <viewLayoutGuide key="safeArea" id="Xew-hR-AcQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="QQu-wl-2Iv" firstAttribute="leading" secondItem="Xew-hR-AcQ" secondAttribute="leading" constant="76" id="1LQ-c9-GWE"/>
-                            <constraint firstItem="Xew-hR-AcQ" firstAttribute="trailing" secondItem="gZ5-BK-l8h" secondAttribute="trailing" constant="60" id="4o6-bV-NZh"/>
-                            <constraint firstItem="Xew-hR-AcQ" firstAttribute="trailing" secondItem="QQu-wl-2Iv" secondAttribute="trailing" constant="101" id="CSN-eU-3pB"/>
                             <constraint firstItem="Xew-hR-AcQ" firstAttribute="trailing" secondItem="yhJ-T8-cua" secondAttribute="trailing" constant="10" id="GQO-mh-Jcu"/>
-                            <constraint firstItem="gZ5-BK-l8h" firstAttribute="leading" secondItem="Xew-hR-AcQ" secondAttribute="leading" constant="60" id="NSU-Sy-Xlf"/>
-                            <constraint firstItem="QQu-wl-2Iv" firstAttribute="top" secondItem="gZ5-BK-l8h" secondAttribute="bottom" constant="20" id="TZB-Xd-PNj"/>
+                            <constraint firstItem="gZ5-BK-l8h" firstAttribute="top" secondItem="Xew-hR-AcQ" secondAttribute="top" constant="332" id="P4E-Hj-rSi"/>
                             <constraint firstItem="Xew-hR-AcQ" firstAttribute="bottom" secondItem="yhJ-T8-cua" secondAttribute="bottom" constant="10" id="app-3a-u4r"/>
-                            <constraint firstItem="gZ5-BK-l8h" firstAttribute="top" secondItem="Xew-hR-AcQ" secondAttribute="top" constant="328" id="fqc-Ct-V25"/>
+                            <constraint firstItem="QQu-wl-2Iv" firstAttribute="top" secondItem="gZ5-BK-l8h" secondAttribute="bottom" constant="31.5" id="cQG-CV-SH8"/>
+                            <constraint firstItem="QQu-wl-2Iv" firstAttribute="centerX" secondItem="tm8-Vq-VMq" secondAttribute="centerX" id="gj5-pd-eRc"/>
+                            <constraint firstItem="gZ5-BK-l8h" firstAttribute="leading" secondItem="Xew-hR-AcQ" secondAttribute="leading" constant="20" id="jal-V8-yrB"/>
+                            <constraint firstItem="Xew-hR-AcQ" firstAttribute="trailing" secondItem="gZ5-BK-l8h" secondAttribute="trailing" constant="20" id="wvP-7j-Ihf"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Mapa" id="PMn-aQ-XmT"/>
