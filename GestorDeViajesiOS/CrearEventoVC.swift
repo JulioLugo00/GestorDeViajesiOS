@@ -46,7 +46,9 @@ class CrearEventoVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
 
     let datePickerFinal = UIDatePicker()
     
-    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
     
     @IBAction func crearEventoBoton(_ sender: Any) {
         if(nombreTextField.text != "" && tipoTextField.text != "" && fechaFinalTextField.text != "" && fechaFinalTextField.text != "" && presupuestoTextField.text != "" && ubicacionTextField.text != ""){
