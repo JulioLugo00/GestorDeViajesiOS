@@ -415,31 +415,31 @@
             <objects>
                 <viewController id="dCB-5s-Seo" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wvu-1a-KGD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienvenido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RdK-Jf-4MT">
-                                <rect key="frame" x="148" y="98" width="119" height="28"/>
+                                <rect key="frame" x="148" y="54" width="119" height="28"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Por favor, inicie sesión" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YEx-QD-y6j">
-                                <rect key="frame" x="89" y="231" width="237" height="28"/>
+                                <rect key="frame" x="89" y="187" width="237" height="28"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SQK-A2-2qo">
-                                <rect key="frame" x="136" y="504" width="84" height="51"/>
+                                <rect key="frame" x="136" y="460" width="84" height="51"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="Log In"/>
                                 <connections>
-                                    <segue destination="m0o-6W-x3L" kind="show" id="8az-sa-K1x"/>
+                                    <segue destination="m0o-6W-x3L" kind="show" id="egG-fZ-xpU"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="google-logo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cwi-0g-RcI">
-                                <rect key="frame" x="265" y="504" width="46" height="75"/>
+                                <rect key="frame" x="265" y="460" width="46" height="75"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ibz-tg-MYM"/>
@@ -458,6 +458,7 @@
                             <constraint firstItem="RdK-Jf-4MT" firstAttribute="top" secondItem="ibz-tg-MYM" secondAttribute="top" constant="54" id="wCW-od-R1N"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="mXg-7W-1Sl"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eAh-H6-2ib" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -677,6 +678,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Cerrar sesión"/>
+                                <connections>
+                                    <segue destination="dCB-5s-Seo" kind="show" id="QJq-j0-CNj"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Qwk-uX-bvG"/>
