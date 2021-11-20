@@ -70,7 +70,7 @@ class CrearEventoVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
                 //alerta.addAction(aceptar)
                 //present(alerta, animated: true)
                 evento = Evento(nombre: nombreTextField.text!, tipo: tipoTextField.text!, fechaInicio: fechaInicioTextField.text!, fechaFin: fechaFinalTextField.text!, presupuesto: Int(presupuestoTextField.text!)!, ubicacion: ubicacionTextField.text!)
-               
+                
             }
             
         }
